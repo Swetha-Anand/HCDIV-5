@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution of Dating Habits: 2000s to 2024</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset and Body Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #1F3A69; /* Deep blue color matching footer */
+            color: white;
+            text-align: center;
+            padding: 75px 20px 40px 20px; /* Adjusted padding for separation */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-weight: 600;
+            margin: 30px auto;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            font-size: 22px;
+            margin-top: 15px;
+            font-weight: 300;
+        }
+
+        /* Introduction Section Styles */
+        .intro-section {
+            padding: 0px 30px; /* Reduced section padding */
+            max-width: 1200px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        .intro-section h2 {
+            font-size: 28px; /* Slightly smaller heading */
+            font-weight: 600;
+            color: #1F3A69;
+            margin-bottom: 20px; /* Reduced margin */
+            text-align: left; /* Centered title */
+        }
+
+        .intro-section p {
+            font-size: 16px; /* Reduced font size */
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Flexbox layout for Introduction */
+        .intro-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Ensure both paragraphs align at the top */
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .intro-text {
+            flex: 1;
+            text-align: justify;
+            padding-right: 10px; /* Justify text to improve readability */
+        }
+
+        .section-img {
+            max-width: 45%; /* Adjusted image size for balance */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Charts Section Styles */
+        .charts-section {
+            padding: 40px 30px; /* Spacing between charts and above content */
+            max-width: 1200px;
+            margin: 50px auto; /* Increased margin to create space from Introduction */
+        }
+
+        .charts-section h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #1F3A69;
+            margin-bottom: 20px; /* Increased margin */
+            text-align: center;
+        }
+
+        .charts-row {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .chart-container {
+            flex: 1;
+            min-width: 280px;
+            max-width: 500px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: none;
+        }
+
+        .chart-container h3 {
+            font-size: 24px;
+            color: #1F3A69;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .chart-container canvas {
+            width: 100% !important;
+            height: auto !important; /* This will ensure the charts do not look stretched */
+        }
+
+        .insight {
+            font-size: 14px; /* Reduced font size for insights */
+            font-style: italic;
+            margin-top: 15px;
+            color: #777;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #1F3A69;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .intro-section {
+                padding: 40px 15px; /* Reduced section padding */
+            }
+            header h1 {
+                font-size: 36px;
+            }
+            header h2 {
+                font-size: 20px;
+            }
+            .charts-section {
+                padding: 40px 15px; /* Reduced padding */
+            }
+            .charts-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .section-img {
+                max-width: 70%;
+                margin-top: 20px;
+            }
+            .intro-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .intro-text {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Evolution of Dating Habits: 2000s to 2024</h1>
+        <h2>How dating behaviors have transformed with technology</h2>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <h2>Introduction</h2>
+        <div class="intro-content">
+            <div class="intro-text">
+                <p>Over the past two decades, dating has been reshaped by the rise of technology, especially through dating apps. What once involved traditional methods like meeting through mutual friends has evolved into a fast-paced digital experience where factors like shared interests, mutual attraction, and geography often dictate relationships.</p>
+                <p>This page explores the transformations in dating habits over time, focusing on the impact of dating apps and societal shifts, with clear data visualizations highlighting these changes from the 2000s to 2024.</p>
+            </div>
+            <img src="https://static.vecteezy.com/system/resources/previews/029/698/578/non_2x/girl-doing-online-dating-illustration-concept-a-flat-illustration-isolated-on-white-background-vector.jpg" alt="Illustration of dating apps" class="section-img" />
+        </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="charts-section">
+        <h2>Charts: Evolution of Dating Habits</h2>
+        <div class="charts-row">
+            <!-- Preferences Chart -->
+            <div class="chart-container">
+                <h3>Attractiveness vs. Shared Interests</h3>
+                <canvas id="preferencesLineChart"></canvas>
+                <p class="insight">Over time, shared interests have overtaken attractiveness as the primary factor in selecting a dating partner, highlighting a shift toward deeper, more meaningful connections.</p>
+            </div>
+
+            <!-- Dating Mediums Chart -->
+            <div class="chart-container">
+                <h3>Traditional vs. App-Based Dating</h3>
+                <canvas id="mediumsChart"></canvas>
+                <p class="insight">As dating apps dominate, traditional dating methods continue to diminish, illustrating how the online world has reshaped our interpersonal connections.</p>
+            </div>
+        </div>
+
+        <div class="charts-row">
+            <!-- Relationship Types Chart -->
+            <div class="chart-container">
+                <h3>Types of Relationships</h3>
+                <canvas id="attitudesChart"></canvas>
+                <p class="insight">Societal attitudes towards various types of relationships have evolved, with casual dating and live-in relationships becoming increasingly accepted.</p>
+            </div>
+
+            <!-- Average Duration Chart -->
+            <div class="chart-container">
+                <h3>Average Relationship Duration</h3>
+                <canvas id="durationChart"></canvas>
+                <p class="insight">The average relationship length has shortened, likely as a result of the speed at which dating is happening in the digital age.</p>
+            </div>
+        </div>
+
+        <div class="charts-row">
+            <!-- Communication Methods Chart -->
+            <div class="chart-container">
+                <h3>Digital vs. In-Person Communication</h3>
+                <canvas id="communicationChart"></canvas>
+                <p class="insight">The shift towards digital communication methods signifies a transformation in relationship dynamics, where texting and messaging are becoming the norm over face-to-face interactions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Evolution of Dating Habits | Designed by Your Name</p>
+    </footer>
+
+    <script>
+        const labels = ['2000', '2005', '2010', '2015', '2020', '2024'];
+
+        // Preferences vs Shared Interests Line Chart with Lighter Blue Shades
+        new Chart(document.getElementById("preferencesLineChart"), {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: "Attractiveness", data: [68, 65, 61, 58, 55, 51], borderColor: "#85C1E9", fill: false, borderWidth: 3 },
+                    { label: "Shared Interests", data: [32, 35, 39, 42, 45, 49], borderColor: "#2980B9", fill: false, borderWidth: 3 }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { grid: { color: "#ddd" } },
+                    y: { beginAtZero: true, grid: { color: "#ddd" } }
+                }
+            }
+        });
+
+        // Dating Mediums Chart with Lighter Blue Shades
+        new Chart(document.getElementById("mediumsChart"), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: "Traditional Methods", data: [85, 65, 42, 30, 15, 8], backgroundColor: "#A9D0F5", borderRadius: 6 },
+                    { label: "Dating Apps", data: [15, 35, 58, 70, 85, 92], backgroundColor: "#2980B9", borderRadius: 6 }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { grid: { color: "#ddd" } },
+                    y: { beginAtZero: true, grid: { color: "#ddd" } }
+                }
+            }
+        });
+
+        // Relationship Types Chart with Lighter Blue Shades
+        new Chart(document.getElementById("attitudesChart"), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: "Serious Relationships", data: [68, 63, 58, 52, 47, 43], backgroundColor: "#A9D0F5", borderRadius: 6 },
+                    { label: "Casual Relationships", data: [20, 25, 32, 40, 45, 52], backgroundColor: "#2980B9", borderRadius: 6 },
+                    { label: "Live-In Relationships", data: [12, 12, 18, 25, 45, 58], backgroundColor: "#5DADE2", borderRadius: 6 }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { grid: { color: "#ddd" } },
+                    y: { beginAtZero: true, grid: { color: "#ddd" } }
+                }
+            }
+        });
+
+        // Average Relationship Duration Line Chart with Lighter Blue Shades
+        new Chart(document.getElementById("durationChart"), {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: "Average Duration (Years)", data: [6.8, 6.5, 6.0, 5.7, 5.2, 4.9], borderColor: "#85C1E9", fill: false, borderWidth: 3 }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { grid: { color: "#ddd" } },
+                    y: { beginAtZero: true, grid: { color: "#ddd" } }
+                }
+            }
+        });
+
+        // Digital vs In-Person Communication Chart with Lighter Blue Shades
+        new Chart(document.getElementById("communicationChart"), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: "In-Person", data: [80, 70, 50, 35, 25, 18], backgroundColor: "#A9D0F5", borderRadius: 6 },
+                    { label: "Digital", data: [20, 30, 50, 65, 75, 82], backgroundColor: "#2980B9", borderRadius: 6 }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { grid: { color: "#ddd" } },
+                    y: { beginAtZero: true, grid: { color: "#ddd" } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
