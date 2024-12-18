@@ -17,20 +17,20 @@
             background-color: #f9f9f9;
         }
 
-        /* Header Section */
+        /* Updated Header Section */
         header {
-            background-color: #1F3A69; /* Deep blue color matching footer */
+            background-color: #1F3A69;
             color: white;
             text-align: center;
-            padding: 75px 20px 40px 20px; /* Adjusted padding for separation */
+            padding: 50px 20px 30px 20px; /* Reduced top and bottom padding */
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
-            font-size: 42px;
+            font-size: 38px; /* Adjusted font size if needed */
             font-weight: 600;
-            margin: 30px auto;
-            letter-spacing: 2px;
+            margin: 20px auto; /* Reduced margin */
+            letter-spacing: 1.5px;
         }
 
         header h2 {
@@ -39,7 +39,7 @@
             font-weight: 300;
         }
 
-        /* Introduction Section Styles */
+        /* Updated Our Process Section */
         .intro-section {
             padding: 0px 30px; /* Reduced section padding */
             max-width: 1200px;
@@ -51,22 +51,23 @@
             font-size: 28px; /* Slightly smaller heading */
             font-weight: 600;
             color: #1F3A69;
-            margin-bottom: 20px; /* Reduced margin */
-            text-align: left; /* Centered title */
+            margin-bottom: 10px; /* Reduced bottom margin */
+            padding-top: 0px; /* Reduced top padding */
+            text-align: left;
         }
 
         .intro-section p {
-            font-size: 16px; /* Reduced font size */
+            font-size: 16px;
             line-height: 1.8;
             color: #555;
             margin-bottom: 20px;
         }
 
-        /* Flexbox layout for Introduction */
+        /* Flexbox layout for Our Process */
         .intro-content {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start; /* Ensure both paragraphs align at the top */
+            align-items: flex-start;
             gap: 30px;
             flex-wrap: wrap;
         }
@@ -74,11 +75,11 @@
         .intro-text {
             flex: 1;
             text-align: justify;
-            padding-right: 10px; /* Justify text to improve readability */
+            padding-right: 10px;
         }
 
         .section-img {
-            max-width: 45%; /* Adjusted image size for balance */
+            max-width: 40%; /* Reduced width for better alignment */
             height: auto;
             border-radius: 10px;
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
@@ -86,16 +87,16 @@
 
         /* Charts Section Styles */
         .charts-section {
-            padding: 40px 30px; /* Spacing between charts and above content */
+            padding: 40px 30px;
             max-width: 1200px;
-            margin: 50px auto; /* Increased margin to create space from Introduction */
+            margin: 50px auto;
         }
 
         .charts-section h2 {
             font-size: 28px;
             font-weight: 600;
             color: #1F3A69;
-            margin-bottom: 20px; /* Increased margin */
+            margin-bottom: 20px;
             text-align: center;
         }
 
@@ -124,14 +125,35 @@
 
         .chart-container canvas {
             width: 100% !important;
-            height: auto !important; /* This will ensure the charts do not look stretched */
+            height: auto !important;
         }
 
         .insight {
-            font-size: 14px; /* Reduced font size for insights */
+            font-size: 14px;
             font-style: italic;
             margin-top: 15px;
             color: #777;
+        }
+
+        /* Conclusion Section */
+        .conclusion-section {
+            padding: 0px 30px; /* Reduced padding for a closer feel */
+            max-width: 1200px;
+            margin: 15px auto 30px auto; /* Reduced top margin */
+        }
+
+        .conclusion-section h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #1F3A69;
+            margin-bottom: 10px;
+        }
+
+        .conclusion-section p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
         }
 
         /* Footer Section */
@@ -152,7 +174,7 @@
         /* Responsive Design */
         @media screen and (max-width: 768px) {
             .intro-section {
-                padding: 40px 15px; /* Reduced section padding */
+                padding: 40px 15px;
             }
             header h1 {
                 font-size: 36px;
@@ -161,7 +183,7 @@
                 font-size: 20px;
             }
             .charts-section {
-                padding: 40px 15px; /* Reduced padding */
+                padding: 40px 15px;
             }
             .charts-row {
                 flex-direction: column;
@@ -191,13 +213,13 @@
         <h2>How dating behaviors have transformed with technology</h2>
     </header>
 
-    <!-- Introduction Section -->
+    <!-- Our Process Section -->
     <section class="intro-section">
-        <h2>Introduction</h2>
+        <h2>Our Process</h2>
         <div class="intro-content">
             <div class="intro-text">
-                <p>Over the past two decades, dating has been reshaped by the rise of technology, especially through dating apps. What once involved traditional methods like meeting through mutual friends has evolved into a fast-paced digital experience where factors like shared interests, mutual attraction, and geography often dictate relationships.</p>
-                <p>This page explores the transformations in dating habits over time, focusing on the impact of dating apps and societal shifts, with clear data visualizations highlighting these changes from the 2000s to 2024.</p>
+                <p>We started by exploring reliable open-source platforms to find datasets that fit the goals of our visualization. After selecting the data, we carefully cleaned and prepared it, ironing out any inconsistencies to make it ready for analysis.</p>
+                <p>With a solid foundation, we designed charts that not only present the data accurately but also make the insights engaging and easy to understand.</p>
             </div>
             <img src="https://static.vecteezy.com/system/resources/previews/029/698/578/non_2x/girl-doing-online-dating-illustration-concept-a-flat-illustration-isolated-on-white-background-vector.jpg" alt="Illustration of dating apps" class="section-img" />
         </div>
@@ -248,6 +270,12 @@
         </div>
     </section>
 
+    <!-- Conclusion Section -->
+    <section class="conclusion-section">
+        <h2>Conclusion</h2>
+        <p>Dating habits have evolved dramatically over the years, driven by societal progress and technological advancements. The shift from traditional methods to app-based connections highlights a broader transformation in how relationships are formed and maintained. While technology has enhanced accessibility and convenience, the importance of genuine emotional connections remains unchanged. This ongoing evolution reminds us that despite changing mediums, the core essence of human relationships endures.</p>
+    </section>
+
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Evolution of Dating Habits | Designed by Your Name</p>
@@ -256,7 +284,7 @@
     <script>
         const labels = ['2000', '2005', '2010', '2015', '2020', '2024'];
 
-        // Preferences vs Shared Interests Line Chart with Lighter Blue Shades
+        // Preferences vs Shared Interests Line Chart
         new Chart(document.getElementById("preferencesLineChart"), {
             type: 'line',
             data: {
@@ -275,7 +303,7 @@
             }
         });
 
-        // Dating Mediums Chart with Lighter Blue Shades
+        // Dating Mediums Chart
         new Chart(document.getElementById("mediumsChart"), {
             type: 'bar',
             data: {
@@ -294,7 +322,7 @@
             }
         });
 
-        // Relationship Types Chart with Lighter Blue Shades
+        // Relationship Types Chart
         new Chart(document.getElementById("attitudesChart"), {
             type: 'bar',
             data: {
@@ -314,7 +342,7 @@
             }
         });
 
-        // Average Relationship Duration Line Chart with Lighter Blue Shades
+        // Average Relationship Duration Line Chart
         new Chart(document.getElementById("durationChart"), {
             type: 'line',
             data: {
@@ -332,7 +360,7 @@
             }
         });
 
-        // Digital vs In-Person Communication Chart with Lighter Blue Shades
+        // Digital vs In-Person Communication Chart
         new Chart(document.getElementById("communicationChart"), {
             type: 'bar',
             data: {
