@@ -17,6 +17,18 @@
             background-color: #f9f9f9;
         }
 
+        /* New Section Title Alignment and Padding Adjustments */
+        section h2 {
+            text-align: left; /* Aligns section headers to the left */
+            padding-left: 30px; /* Matches the padding with the Introduction header */
+        }
+        section {
+            padding-top: 15px; /* Reduced vertical padding by 15px */
+            padding-bottom: 15px;
+        }
+
+        /* Other existing styles continue below... */
+
         /* Updated Header Section */
         header {
             background-color: #1F3A69;
@@ -223,6 +235,110 @@
             </div>
             <img src="https://static.vecteezy.com/system/resources/previews/029/698/578/non_2x/girl-doing-online-dating-illustration-concept-a-flat-illustration-isolated-on-white-background-vector.jpg" alt="Illustration of dating apps" class="section-img" />
         </div>
+        <section class="timeline-chart">
+            <h2 class="section-title">Process Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-step" style="--step-color: #7DBCE7;"> <!-- Lighter Blue -->
+                    <div class="circle">1</div>
+                    <p>Sourcing Data</p>
+                </div>
+                <div class="timeline-connector" style="--connector-color: #7DBCE7;"></div>
+                <div class="timeline-step" style="--step-color: #4B96CE;"> <!-- Slightly Darker -->
+                    <div class="circle">2</div>
+                    <p>Cleaning & Preparing</p>
+                </div>
+                <div class="timeline-connector" style="--connector-color: #4B96CE;"></div>
+                <div class="timeline-step" style="--step-color: #345F8F;"> <!-- Mid-tone Blue -->
+                    <div class="circle">3</div>
+                    <p>Analyzing Insights</p>
+                </div>
+                <div class="timeline-connector" style="--connector-color: #345F8F;"></div>
+                <div class="timeline-step" style="--step-color: #1F3A69;"> <!-- Soft Darker Blue -->
+                    <div class="circle">4</div>
+                    <p>Creating Visualizations</p>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+            /* Timeline Chart Section */
+            .timeline-chart {
+                text-align: center;
+                padding: 40px 20px;
+                margin: 30px auto;
+                max-width: 900px;
+            }
+        
+            .timeline-chart .section-title {
+                font-size: 28px;
+                font-weight: 600;
+                color: #1F3A69;
+                margin-bottom: 40px;
+            }
+        
+            .timeline-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                gap: 10px;
+            }
+        
+            .timeline-step {
+                flex: 1;
+                text-align: center;
+                position: relative;
+            }
+        
+            .timeline-step .circle {
+                width: 50px;
+                height: 50px;
+                margin: 0 auto;
+                border-radius: 50%;
+                background-color: var(--step-color);
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 50px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            }
+        
+            .timeline-step p {
+                margin-top: 10px;
+                font-size: 16px;
+                color: #555;
+                font-weight: 600;
+            }
+        
+            .timeline-connector {
+                width: 100px;
+                height: 6px;
+                background-color: var(--connector-color);
+                margin-top: -25px;
+                flex-shrink: 0;
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+            }
+        
+            /* Responsive Design for Smaller Screens */
+            @media screen and (max-width: 768px) {
+                .timeline-container {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 30px;
+                }
+        
+                .timeline-step {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 15px;
+                }
+        
+                .timeline-connector {
+                    display: none;
+                }
+            }
+        </style>        
     </section>
 
     <!-- Charts Section -->
@@ -273,12 +389,12 @@
     <!-- Conclusion Section -->
     <section class="conclusion-section">
         <h2>Conclusion</h2>
-        <p>Dating habits have evolved dramatically over the years, driven by societal progress and technological advancements. The shift from traditional methods to app-based connections highlights a broader transformation in how relationships are formed and maintained. While technology has enhanced accessibility and convenience, the importance of genuine emotional connections remains unchanged. This ongoing evolution reminds us that despite changing mediums, the core essence of human relationships endures.</p>
+        <p>Dating habits have evolved significantly, driven by societal progress and technological advancements. The shift from traditional methods to app-based connections highlights changing preferences, yet the core human desire for meaningful relationships remains timeless. This evolution showcases how technology reshapes but never replaces human connection.</p>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Evolution of Dating Habits | Designed by Your Name</p>
+        <p>&copy; 2024 Evolution of Dating Habits | Shravani Vadapurkar 1009695 | Swetha Anand 1009702</p>
     </footer>
 
     <script>
